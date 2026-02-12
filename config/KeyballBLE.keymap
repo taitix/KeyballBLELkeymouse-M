@@ -70,19 +70,19 @@
 
         FUNCTION {
             bindings = <
-&kp ESCAPE  &kp F11  &kp F12  &kp SPACE  &kp SPACE  &kp PRINTSCREEN                       &kp PAGE_UP    &trans      &kp UP             &kp LBKT         &kp RBKT  &kp BSLH
-&trans      &kp F1   &kp F2   &kp F3     &kp F4     &kp F5           &trans     &kp HOME  &kp PAGE_UP    &kp LEFT    &kp DOWN           &kp RIGHT_ARROW  &kp SQT   &kp SQT
-&trans      &kp F6   &kp F7   &kp F8     &kp F9     &kp F10          &kp F11    &kp END   &kp PAGE_DOWN  &kp C_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans    &trans
-&trans      &trans   &trans   &trans     &trans     &trans           &trans     &trans    &trans                                                         &trans    &trans
+&kp ESCAPE  &kp F11  &kp F12  &kp SPACE  &kp SPACE  &kp PRINTSCREEN                       &kp PAGE_UP    &trans      &kp UP             &kp LBKT         &kp RBKT         &kp BSLH
+&trans      &kp F1   &kp F2   &kp F3     &kp F4     &kp F5           &trans     &kp HOME  &kp PAGE_UP    &kp LEFT    &kp DOWN           &kp RIGHT_ARROW  &kp SQT          &kp DOUBLE_QUOTES
+&trans      &kp F6   &kp F7   &kp F8     &kp F9     &kp F10          &kp F11    &kp END   &kp PAGE_DOWN  &kp C_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_AC_SEARCH  &trans
+&trans      &trans   &trans   &trans     &trans     &trans           &trans     &trans    &trans                                                         &trans           &trans
             >;
         };
 
         NUM {
             bindings = <
-&kp ESCAPE  &kp LS(EXCL)  &kp LS(AT)  &kp LS(POUND)  &kp LS(DLLR)  &kp LS(PRCNT)                                     &kp LS(CARET)  &kp LS(AMPS)  &kp LS(STAR)  &kp LS(LPAR)  &kp LS(RPAR)  &kp LS(UNDER)
-&trans      &kp N1        &kp N2      &kp N3         &kp N4        &kp N5         &kp LC(LA(KP_NUMBER_0))    &trans  &kp N6         &kp N7        &kp N8        &kp N9        &kp N0        &trans
-&trans      &kp N6        &kp N7      &kp N8         &kp N9        &kp N0         &kp PERIOD                 &trans  &kp N1         &kp N2        &kp N3        &kp N4        &kp N5        &kp DOT
-&trans      &trans        &trans      &trans         &trans        &trans         &trans                     &trans  &kp PERIOD                                               &trans        &trans
+&kp ESCAPE  &kp LS(EXCL)  &kp LS(AT)  &kp LS(POUND)  &kp LS(DLLR)  &kp LS(PRCNT)                                &kp LS(CARET)  &kp LS(AMPS)  &kp LS(STAR)  &kp LS(LPAR)  &kp LS(RPAR)  &kp LS(UNDER)
+&trans      &kp N1        &kp N2      &kp N3         &kp N4        &kp N5         &kp LC(LA(C_MUTE))    &trans  &kp N6         &kp N7        &kp N8        &kp N9        &kp N0        &trans
+&trans      &kp N6        &kp N7      &kp N8         &kp N9        &kp N0         &kp PERIOD            &trans  &kp N1         &kp N2        &kp N3        &kp N4        &kp N5        &kp DOT
+&trans      &trans        &trans      &trans         &trans        &trans         &trans                &trans  &kp PERIOD                                               &trans        &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
@@ -101,10 +101,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans              &kp LG(UP_ARROW)    &trans               &trans                              &kp LG(R)  &kp LC(PAGE_UP)  &kp LC(PAGE_DOWN)  &mo 5     &kp PRINTSCREEN  &trans
-&trans  &trans  &kp LG(LEFT_ARROW)  &kp LG(DOWN_ARROW)  &kp LG(RIGHT_ARROW)  &mkp MB3  &mkp MB3    &kp UP_ARROW  &mkp MB3   &mkp MB1         &mkp MB2           &mkp MB3  &trans           &trans
-&trans  &trans  &trans              &trans              &trans               &trans    &trans      &kp DOWN      &trans     &mkp MB4         &mkp MB5           &trans    &trans           &trans
-&trans  &trans  &trans              &trans              &trans               &trans    &trans      &trans        &trans                                                   &trans           &to 0
+&trans  &trans  &trans              &kp LG(UP_ARROW)    &trans               &trans                           &kp C_AC_BACK     &kp LC(PAGE_UP)  &kp LC(PAGE_DOWN)  &mo 5              &kp PRINTSCREEN  &trans
+&trans  &trans  &kp LG(LEFT_ARROW)  &kp LG(DOWN_ARROW)  &kp LG(RIGHT_ARROW)  &trans  &trans    &kp HOME       &kp PAGE_UP       &mkp MB1         &mkp MB2           &mkp MB3           &trans           &trans
+&trans  &trans  &trans              &trans              &trans               &trans  &trans    &kp END        &kp PAGE_DOWN     &kp C_MUTE       &kp C_VOLUME_DOWN  &kp C_VOLUME_DOWN  &trans           &trans
+&trans  &trans  &trans              &trans              &trans               &trans  &trans    &kp C_AC_BACK  &kp C_AC_FORWARD                                                         &trans           &trans
             >;
         };
 
