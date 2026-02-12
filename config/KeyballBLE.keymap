@@ -69,19 +69,19 @@
 
         FUNCTION {
             bindings = <
-&kp ESCAPE  &kp F11  &kp F12  &kp HASH  &kp DOLLAR  &kp PRINTSCREEN                            &kp CARET       &kp AMPERSAND  &kp UP         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDERSCORE
-&trans      &kp F1   &kp F2   &kp F3    &kp F4      &kp F5           &trans     &kp PAGE_UP    &kp LEFT_ARROW  &kp LEFT       &kp DOWN       &kp RIGHT_ARROW       &kp COLON              &kp LS(DOUBLE_QUOTES)
-&trans      &kp F6   &kp F7   &kp F8    &kp F9      &kp F10          &kp F11    &kp PAGE_DOWN  &kp F11         &kp F12        &kp LESS_THAN  &kp GREATER_THAN      &kp QUESTION           &trans
-&trans      &trans   &trans   &trans    &trans      &trans           &trans     &trans         &trans                                                              &kp F12                &trans
+&kp ESCAPE  &kp F11  &kp F12  &kp HASH  &kp DOLLAR  &kp PRINTSCREEN                            &trans          &trans    &kp UP            &kp MINUS          &kp PLUS  &kp BSLH
+&trans      &kp F1   &kp F2   &kp F3    &kp F4      &kp F5           &trans     &kp PAGE_UP    &kp LEFT_ARROW  &kp LEFT  &kp DOWN          &kp RIGHT_ARROW    &kp SQT   &kp SQT
+&trans      &kp F6   &kp F7   &kp F8    &kp F9      &kp F10          &kp F11    &kp PAGE_DOWN  &trans          &trans    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans    &trans
+&trans      &trans   &trans   &trans    &trans      &trans           &trans     &trans         &trans                                                         &trans    &trans
             >;
         };
 
         NUM {
             bindings = <
-&kp ESCAPE  &kp MINUS  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS                                             &kp N1  &kp N2  &kp N3  &kp N4  &kp N5    &trans
-&trans      &kp N1     &kp N2           &kp N3           &kp N4           &kp N5    &kp LC(LA(KP_NUMBER_0))    &kp UNDERSCORE  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0    &kp DOT
-&trans      &kp N6     &kp N7           &kp N8           &kp N9           &kp N0    &kp PERIOD                 &trans          &trans  &trans  &trans  &trans  &kp N0    &kp DOT
-&trans      &trans     &trans           &trans           &trans           &trans    &trans                     &trans          &trans                          &kp PIPE  &trans
+&kp ESCAPE  &kp MINUS  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp MINUS  &kp PLUS                                        &kp N1  &kp N2  &kp N3  &kp N4  &kp N5    &kp MINUS
+&trans      &kp N1     &kp N2           &kp N3           &kp N4     &kp N5    &kp LC(LA(KP_NUMBER_0))    &kp MINUS  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0    &kp DOT
+&trans      &kp N6     &kp N7           &kp N8           &kp N9     &kp N0    &kp PERIOD                 &kp PLUS   &trans  &trans  &trans  &trans  &kp N0    &kp DOT
+&trans      &trans     &trans           &trans           &trans     &trans    &trans                     &trans     &trans                          &kp PIPE  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
