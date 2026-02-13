@@ -59,10 +59,10 @@
 
         default_layer {
             bindings = <
-&kp TAB           &kp Q     &kp W     &kp E     &kp R  &kp T                                 &kp Y  &kp U  &kp I      &kp O    &kp P            &kp BSPC
-&kp LEFT_CONTROL  &kp A     &kp S     &kp D     &kp F  &kp G  &mkp MCLK     &kp MINUS        &kp H  &kp J  &kp K      &kp L    &lt 4 SEMICOLON  &kp ENTER
-&kp LSHFT         &kp Z     &kp X     &kp C     &kp V  &kp B  &kp DELETE    &kp EQUAL        &kp N  &kp M  &kp COMMA  &kp DOT  &kp FSLH         &tog 2
-&kp GRAVE         &kp LGUI  &kp LGUI  &kp LALT  &mo 3  &mo 2  &kp SPACE     &kp RIGHT_SHIFT  &mo 1                             &mo 6            &tog 4
+&kp TAB           &kp Q  &kp W     &kp E     &kp R  &kp T                                 &kp Y  &kp U  &kp I      &kp O    &kp P            &kp BSPC
+&kp LEFT_CONTROL  &kp A  &kp S     &kp D     &kp F  &kp G  &kp CAPS      &kp MINUS        &kp H  &kp J  &kp K      &kp L    &lt 4 SEMICOLON  &kp ENTER
+&kp LSHFT         &kp Z  &kp X     &kp C     &kp V  &kp B  &kp DELETE    &kp EQUAL        &kp N  &kp M  &kp COMMA  &kp DOT  &kp FSLH         &tog 2
+&kp GRAVE         &mo 1  &kp LGUI  &kp LALT  &mo 3  &mo 2  &kp SPACE     &kp RIGHT_SHIFT  &mo 1                             &mo 6            &tog 4
             >;
 
             sensor-bindings = <&ROTATE SCRL_DOWN SCRL_UP>;
@@ -79,10 +79,10 @@
 
         NUM {
             bindings = <
-&kp ESCAPE  &kp LS(EXCL)  &kp LS(AT)  &kp LS(POUND)  &kp LS(DLLR)  &kp LS(PRCNT)                                &kp LS(CARET)  &kp LS(AMPS)  &kp LS(STAR)  &kp LS(LPAR)  &kp LS(RPAR)  &kp LS(UNDER)
-&trans      &kp N1        &kp N2      &kp N3         &kp N4        &kp N5         &kp LC(LA(C_MUTE))    &trans  &kp N6         &kp N7        &kp N8        &kp N9        &kp N0        &trans
-&trans      &kp N6        &kp N7      &kp N8         &kp N9        &kp N0         &kp PERIOD            &trans  &kp N1         &kp N2        &kp N3        &kp N4        &kp N5        &trans
-&trans      &trans        &trans      &trans         &trans        &trans         &trans                &trans  &kp PERIOD                                               &trans        &trans
+&kp ESCAPE  &kp EXCLAMATION  &kp AT  &kp HASH  &kp DOLLAR  &kp PERCENT                        &kp CARET   &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDERSCORE
+&trans      &kp N1           &kp N2  &kp N3    &kp N4      &kp N5       &kp C_MUTE    &trans  &kp N6      &kp N7         &kp N8        &kp N9                &kp N0                 &trans
+&trans      &kp N6           &kp N7  &kp N8    &kp N9      &kp N0       &kp PERIOD    &trans  &kp N1      &kp N2         &kp N3        &kp N4                &kp N5                 &trans
+&trans      &trans           &trans  &trans    &trans      &trans       &trans        &trans  &kp PERIOD                                                     &trans                 &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
